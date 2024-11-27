@@ -1,0 +1,32 @@
+.services-wrapper {
+  border: 2px solid #629fe9; /* Black border */
+  border-radius: 8px;    /* Optional: Rounded corners */
+  padding: 16px;         /* Optional: Space inside the border */
+  margin: 16px auto; 
+  width: 60%;
+  padding: 30px 30px;  /* Optional: Center the container */
+  max-width: 900px; 
+  text-align: center;    /* Optional: Restrict the width */
+}
+.services-wrapper:hover {
+  background-color: #d9dde01f;
+}
+.services-wrapper h2 {
+  color: #04367a;
+  font-family: "Roboto Serif", serif;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.services-wrapper p {
+  color: #3f3f3f;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
