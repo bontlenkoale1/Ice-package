@@ -1,0 +1,44 @@
+.footer-wrapper {
+  display: flex;
+  margin-top: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1536px;
+  padding: 10px;
+  background-color: #043371;
+}
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  /* Footer Social Media Wrapper */
+  .footer-social-media-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Footer Social Media List */
+  .footer-social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Space between icons */
+  }
+  
+  /* Footer Social Media Icons */
+  .footer-social-media li {
+    display: inline-block;
+  }
+  
+  .footer-social-media img {
+    width: 25px; /* Icon size */
+    height: 20px;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .footer-social-media img:hover {
+    opacity: 0.7; /* Slight opacity change on hover */
+  }

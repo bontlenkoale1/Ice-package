@@ -1,11 +1,10 @@
 /*import React from 'react'*/
 import "./Hero.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Import Swiper styles
-/*import 'swiper/css/pagination'; // Optional (if using pagination)*/
-import "swiper/css/navigation"; // Optional (if using navigation)
+import "swiper/css"; 
 
-// Import Swiper modules
+import "swiper/css/navigation"; 
+
 import { Navigation } from "swiper/modules";
 
 const Hero = () => {

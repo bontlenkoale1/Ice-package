@@ -1,0 +1,36 @@
+.map-h2-wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 230px;
+  }
+  .map-h2-wrapper h2 {
+    color: #043371;
+    font-family: "Roboto Serif", serif;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .google-maps-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+    border: 2px solid #629fe9;
+    border-radius: 10px;
+  }
+  .google-maps-wrapper:hover {
+    background-color: #fafbfb;
+  }
+  
+  .google-maps-wrapper iframe {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 90%;
+    height: 90%;
+    border: 0;
+  }

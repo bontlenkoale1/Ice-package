@@ -1,18 +1,18 @@
 .services-wrapper {
-  border: 2px solid #629fe9; /* Black border */
-  border-radius: 8px;    /* Optional: Rounded corners */
-  padding: 16px;         /* Optional: Space inside the border */
+  border: 2px solid #629fe9; 
+  border-radius: 8px;    
+  padding: 16px;        
   margin: 16px auto; 
   width: 60%;
-  padding: 30px 30px;  /* Optional: Center the container */
+  padding: 30px 30px; 
   max-width: 900px; 
-  text-align: center;    /* Optional: Restrict the width */
+  text-align: center; 
 }
 .services-wrapper:hover {
   background-color: #d9dde01f;
 }
 .services-wrapper h2 {
-  color: #04367a;
+  color: #043371;
   font-family: "Roboto Serif", serif;
   font-size: 30px;
   font-weight: bolder;
