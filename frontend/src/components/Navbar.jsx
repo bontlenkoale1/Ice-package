@@ -7,11 +7,12 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <nav className="container">
       <div className="nav-logo-wrapper">
         <ul className="nav-logo-link">
-          <a href="#">
+          <a href="#hero">
             <img src="/cava logo.png" alt="Cava Logo" className="nav-logo" />
           </a>
         </ul>
@@ -19,25 +20,25 @@ const Navbar = () => {
       <div className={`nav-links-wrapper ${isMenuOpen ? "open" : ""}`}>
         <ul className="nav-links">
           <li>
-            <a href="#">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact-us">Contact</a>
           </li>
         </ul>
       </div>
       <div className="hamburger-wrapper">
-      <div className="hamburger" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <div className="hamburger" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   );

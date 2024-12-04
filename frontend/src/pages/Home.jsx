@@ -11,25 +11,25 @@ import LocateUs from "../components/LocateUs";
 const Home = () => {
   return (
     <>
-      <section className="hero-section">
+      <section id="hero" className="hero-section">
         <Hero />
       </section>
-      <section className="about-section">
+      <section id="about" className="about-section">
         <About />
       </section>
-      <section className="services-section">
+      <section id="services" className="services-section">
         <Services />
       </section>
-      <section className="gallery-section">
+      <section id="gallery" className="gallery-section">
         <Gallery />
       </section>
-      <section className="worked-with-section">
+      <section id="worked-with" className="worked-with-section">
         <WorkedWith />
       </section>
-      <section className="contact-us-section">
+      <section id="contact-us" className="contact-us-section">
         <ContactUs />
       </section>
-      <section className="locate-us-section">
+      <section id="locate-us" className="locate-us-section">
         <LocateUs />
       </section>
     </>

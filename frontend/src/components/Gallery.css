@@ -1,10 +1,11 @@
 .gallery-wrapper {
   display: flex;
   justify-content: center;
-  padding: 30px 30px;
+  flex-wrap: wrap;
+  gap: 20px; 
+  padding: 30px;
   margin-top: 130px;
 }
-
 .gallery-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
@@ -15,12 +16,13 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin: 10px;
 }
 .gallery-wrapper .swiper-slide:hover {
   transform: scale(1.2);
 }
 .gallery-wrapper .swiper-pagination-bullet {
-  background-color: #0400ff; 
+  background-color: #0400ff;
 }
 
 .gallery-wrapper .swiper-pagination-bullet-active {
@@ -29,4 +31,100 @@
 .gallery-wrapper .swiper-button-next,
 .gallery-wrapper .swiper-button-prev {
   display: none;
+}
+/* Media    queries */
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .gallery-wrapper {
+    padding: 15px;
+    margin-top: 70px;
+    gap: 30px;
+  }
+
+  .gallery-wrapper .swiper-slide {
+    height: 50vh;
+    width: 70vw;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  .gallery-wrapper {
+    gap: 50px;
+  }
+
+  .gallery-wrapper .swiper-slide {
+    height: 50vh;
+    width: 60vh;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  .gallery-wrapper {
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+  .gallery-wrapper .swiper-slide {
+    height: 50vh;
+    width: 90vw;
+  }
+
+  .gallery-wrapper .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+  }
+
+  .gallery-wrapper .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+  .gallery-wrapper {
+    padding: 5px;
+    margin-top: 50px;
+  }
+
+  .gallery-wrapper .swiper-slide {
+    height: 30vh;
+    width: 100vw;
+  }
+
+  .gallery-wrapper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .gallery-wrapper .swiper-pagination-bullet-active {
+    width: 7px;
+    height: 7px;
+  }
 }

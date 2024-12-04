@@ -60,9 +60,171 @@
   margin: 5px 0;
 }
 .social-links a:active {
-    color: #ff0000;
+  color: #ff0000;
 }
 .social-logo img {
   width: 30px;
   height: 30px;
+}
+
+/* Media Queries */
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .worked-with-wrapper h2 {
+    font-size: 40px;
+    margin-left: -10px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .worked-with-wrapper h2 {
+    font-size: 30px;
+    margin-left: -10px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .worked-with-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align all items */
+    gap: 15px; /* Adjust spacing */
+    margin-top: 60px; /* Reduce top margin */
+  }
+
+  .worked-with-wrapper h2 {
+    font-size: 30px; /* Adjust font size */
+    margin-left: 0; /* Center align */
+    text-align: center;
+  }
+
+  .worked-with-logos-wrapper {
+    gap: 50px; /* Adjust spacing between logos */
+    margin-top: 50px; /* Reduce top margin */
+    justify-content: center; /* Center logos */
+  }
+
+  .establishment {
+    width: 200px; /* Resize the circle */
+    height: 200px;
+    margin-top: 30px; /* Adjust spacing */
+    padding: 8px; /* Slightly reduce padding */
+  }
+
+  .establishment img {
+    width: 75%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .social-links {
+    flex-direction: row; /* Keep links in a row */
+    align-items: center;
+    justify-content: center; /* Center align links */
+    margin-top: 30px; /* Adjust top margin */
+    gap: 15px; /* Adjust spacing between links */
+  }
+
+  .social-links a {
+    font-size: 22px; /* Adjust font size */
+  }
+
+  .social-logo img {
+    width: 25px; /* Resize logos */
+    height: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .worked-with-wrapper {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align */
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .worked-with-wrapper h2 {
+    font-size: 25px; /* Smaller font size */
+    margin-left: 0; /* Center align */
+    text-align: center;
+  }
+
+  .worked-with-logos-wrapper {
+    gap: 40px; /* Reduce spacing between logos */
+    margin-top: 40px; /* Reduce top margin */
+  }
+
+  .establishment {
+    width: 180px; /* Smaller size for smaller screens */
+    height: 180px;
+    margin-top: 20px; /* Reduce top margin */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .establishment img {
+    width: 70%; /* Adjust image size */
+  }
+
+  .social-links {
+    flex-direction: column; /* Stack links vertically */
+    margin-left: 0; /* Center align */
+    margin-top: 20px; /* Reduce top margin */
+    gap: 10px; /* Smaller spacing */
+  }
+
+  .social-links a {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .social-logo img {
+    width: 20px; /* Smaller logo size */
+    height: 20px;
+  }
+}
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+
+  .worked-with-wrapper h2 {
+    font-size: 20px; /* Even smaller font size */
+  }
+
+  .worked-with-logos-wrapper {
+    gap: 20px; /* Further reduce spacing */
+    margin-top: 20px;
+  }
+
+  .establishment {
+    width: 150px; /* Smaller size */
+    height: 150px;
+  }
+
+  .social-links a {
+    font-size: 18px; /* Further reduce font size */
+  }
+
+  .social-logo img {
+    width: 18px; /* Adjust size */
+    height: 18px;
+  }
 }
