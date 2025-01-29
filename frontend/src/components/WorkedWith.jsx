@@ -1,7 +1,61 @@
-/*import React from 'react'*/
+import React from "react";
+import PropTypes from "prop-types"; 
 import "./WorkedWith.css";
-import Instagram from "/Instagram.png";
-import Tiktok from "/2504942 3.png";
+import InstagramIcon from "/Instagram.png";
+import TiktokIcon from "/2504942 3.png";
+
+const establishments = [
+  {
+    name: "Food Af",
+    logo: "/foodAf.jpg",
+    instagram: "https://www.instagram.com/food_af_k1/",
+    tiktok: "https://www.tiktok.com/@food_af",
+  },
+  {
+    name: "14 Avenue",
+    logo: "/IMG-20241119-WA0004.png",
+    instagram: "https://www.instagram.com/1431avenue/",
+    tiktok: "https://www.tiktok.com/@14thirty1_avenue",
+  },
+  {
+    name: "Hurricane",
+    logo: "/hurricane-logo.png",
+    instagram: "https://www.instagram.com/hurricaneslifestyle/?hl=en",
+    tiktok: "https://www.tiktok.com/@hurricanelifestyle?_t=8kOopGbHoRh&_r=1",
+  },
+  {
+    name: "Eskhaleni",
+    logo: "/eskhaleni.jpg",
+    instagram: "https://www.instagram.com/eskhalenishisanyama/?hl=en",
+  },
+];
+
+const SocialLinks = ({ instagram, tiktok }) => (
+  <div className="social-links">
+    {instagram && (
+      <>
+        <img src={InstagramIcon} alt="Instagram" className="social-logo" />
+        <a href={instagram} target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </>
+    )}
+    {tiktok && (
+      <>
+        <img src={TiktokIcon} alt="TikTok" className="social-logo" />
+        <a href={tiktok} target="_blank" rel="noopener noreferrer">
+          TikTok
+        </a>
+      </>
+    )}
+  </div>
+);
+
+
+SocialLinks.propTypes = {
+  instagram: PropTypes.string,
+  tiktok: PropTypes.string,
+};
 
 const WorkedWith = () => {
   return (
@@ -10,42 +64,17 @@ const WorkedWith = () => {
         <h2>Establishments We Have Worked With</h2>
       </div>
       <div className="worked-with-logos-wrapper">
-        <div className="establishment">
-          <img src="/IMG-20241119-WA0004.png" alt="14 Avenue Logo" />
-        </div>
-        <div className="social-links">
-          <img src={Instagram} alt="" className="social-logo" />
-          <a href="https://www.instagram.com/1431avenue/" target="_blank">
-            Instagram
-          </a>
-          <img src={Tiktok} alt="" className="social-logo" />
-          <a href="https://www.tiktok.com/@14thirty1_avenue" target="_blank">
-            TikTok
-          </a>
-        </div>
-        <div className="establishment">
-          <img src="/hurricane-logo.png" alt="hurricane" />
-        </div>
-        <div className="social-links">
-          <img src={Instagram} alt="" className="social-logo" />
-          <a href="https://www.instagram.com/hurricaneslifestyle/?hl=en" target="_blank">
-            Instagram
-          </a>
-          <img src={Tiktok} alt="" className="social-logo" />
-          <a href="https://www.tiktok.com/@hurricanelifestyle?_t=8kOopGbHoRh&_r=1" target="_blank">
-            TikTok
-          </a>
-        </div>
-        <div className="establishment">
-          <img src="/eskhaleni.jpg" alt="eskhaleni" />
-        </div>
-        <div className="social-links">
-          <img src={Instagram} alt="" className="social-logo" />
-          <a href="https://www.instagram.com/eskhalenishisanyama/?hl=en" target="_blank">
-            Instagram
-          </a>
-        </div>
-
+        {establishments.map((establishment, index) => (
+          <div key={index} className="establishment-container">
+            <div className="establishment">
+              <img src={establishment.logo} alt={establishment.name} />
+            </div>
+            <SocialLinks
+              instagram={establishment.instagram}
+              tiktok={establishment.tiktok}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

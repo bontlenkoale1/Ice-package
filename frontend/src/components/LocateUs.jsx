@@ -5,7 +5,7 @@ const LocateUs = () => {
   return (
     <div className="container">
       <div className="map-h2-wrapper">
-        <h2>Locate Us</h2>
+        <h2>Locate Us <img src="/location-ping.png" /></h2>
       </div>
       <div className="google-maps-wrapper">
         <iframe 

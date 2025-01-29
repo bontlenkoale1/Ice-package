@@ -6,6 +6,7 @@ import Gallery from "../components/Gallery";
 import  WorkedWith  from "../components/WorkedWith";
 import ContactUs from "../components/ContactUs";
 import LocateUs from "../components/LocateUs";
+import Review from "../components/ReviewPage";
 
 
 const Home = () => {
@@ -31,6 +32,9 @@ const Home = () => {
       </section>
       <section id="locate-us" className="locate-us-section">
         <LocateUs />
+      </section>
+      <section id="review" className="review-section">
+        <Review />
       </section>
     </>
   );

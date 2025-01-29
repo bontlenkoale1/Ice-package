@@ -1,36 +1,101 @@
-.map-h2-wrapper{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 230px;
+.map-h2-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 180px; /* Reduced for better space on smaller screens */
+}
+
+.map-h2-wrapper h2 {
+  color: #043371;
+  font-family: "Roboto Serif", serif;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+}
+.map-h2-wrapper img {
+  width: 30px; 
+  height: auto; 
+  margin-left: 15px;
+}
+
+/* Google Maps Wrapper */
+.google-maps-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* Keeps 16:9 aspect ratio */
+  border: 2px solid #629fe9;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.google-maps-wrapper:hover {
+  background-color: #f0f0f0; /* Softer hover effect */
+}
+
+.google-maps-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .map-h2-wrapper {
+    margin-top: 150px;
   }
+
   .map-h2-wrapper h2 {
-    color: #043371;
-    font-family: "Roboto Serif", serif;
-    font-size: 50px;
-    font-weight: bolder;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    text-align: center;
-    align-items: center;
-    
+    font-size: 40px;
   }
+
   .google-maps-wrapper {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; 
-    border: 2px solid #629fe9;
-    border-radius: 10px;
+    padding-top: 50%; 
   }
-  .google-maps-wrapper:hover {
-    background-color: #fafbfb;
+}
+
+
+@media (max-width: 768px) {
+  .map-h2-wrapper {
+    margin-top: 120px;
   }
-  
+
+  .map-h2-wrapper h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  .google-maps-wrapper {
+    padding-top: 45%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .map-h2-wrapper {
+    margin-top: 100px;
+  }
+
+  .map-h2-wrapper h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .google-maps-wrapper {
+    padding-top: 50%; 
+    border-width: 1px; 
+  }
+
   .google-maps-wrapper iframe {
-    position: absolute;
-    top: 50px;
-    left: 80px;
-    width: 90%;
-    height: 90%;
-    border: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
+}

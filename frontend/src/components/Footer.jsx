@@ -1,34 +1,32 @@
-/*import React from 'react'*/
+import React from 'react';
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <footer className="footer-container">
       <div className="footer-wrapper">
-        <div className="footer-content">
-          <p>© 2024 Cava Le Ice. All rights reserved.</p>
-        </div>
-        <div className="footer-social-media-wrapper">
+        <p className="footer-text">&copy; 2024 Cava Le Ice. All rights reserved.</p>
+        <nav aria-label="Social Media Links" className="footer-social-media-wrapper">
           <ul className="footer-social-media">
             <li>
-              <a href="#">
-                <img src="/Facebook Circled.png" alt="Facebook Icon" />
+              <a href="#" aria-label="Facebook">
+                <img src="/Facebook Circled.png" alt="Facebook" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="/Twitter Circled.png" alt="Twitter Icon" />
+              <a href="#" aria-label="Twitter">
+                <img src="/Twitter Circled.png" alt="Twitter" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="/Instagram (1).png" alt="Instagram Icon" />
+              <a href="#" aria-label="Instagram">
+                <img src="/Instagram (1).png" alt="Instagram" />
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </div>
+    </footer>
   );
 };
 
